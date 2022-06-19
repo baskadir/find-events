@@ -5,10 +5,16 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
+import {useNavigate} from "react-router-dom";
 
-const navItems = ['Anasayfa', 'Etkinlikler', 'İletişim'];
+const navItems = [{'id':1,'title':'Anasayfa','url':'/'}, 
+{'id':2,'title':'Etkinlikler','url':'/events'}, 
+{'id':3,'title':'İletişim','url':'/contact'}];
 
 export default function Navbar() {
+
+    const navigate = useNavigate();
+
     return (
         <AppBar
             position="static"
@@ -26,12 +32,12 @@ export default function Navbar() {
                     <nav>
                     {navItems.map((item) => (
                         <Link
-                            key={item}
+                            key={item.id}
                             variant="button"
                             color="text.primary"
-                            href="#"
-                            sx={{ my: 1, mx: 1.5, textDecoration: 'none' }}>
-                                {item}
+                            onClick={()=>navigate(item.url)}
+                            sx={{ my: 1, mx: 1.5, textDecoration: 'none', cursor:'pointer' }}>
+                                {item.title}    
                         </Link>
                         ))}
                     </nav>
