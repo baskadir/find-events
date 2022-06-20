@@ -23,7 +23,7 @@ export default function Slider() {
     }
 
     return (
-        <Box sx={{ display:'flex', justifyContent: 'center', height: "100vh", mt:2 }}>
+        <Box sx={{ display:'flex', justifyContent: 'center', mt:2 }}>
             <Swiper
                 cssMode={true}
                 navigation={true}
