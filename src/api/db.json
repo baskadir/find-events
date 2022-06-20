@@ -9,7 +9,7 @@
             "id":1, 
             "title":"Evgeny Grinko", 
             "description":"Evgeny Grinko, dinleyicileri ile buluşuyor...",
-            "date":"01 May 2022", 
+            "date":"15 May 2022", 
             "placeId": 1,
             "categoryId":1,
             "numberOfParticipant": 10
@@ -18,7 +18,7 @@
             "id":2, 
             "title":"ByWillow Fest",
             "description":"ByWillow Fest 30 Haziran İstanbul Beşiktaş IF Performance Hall sahnesinde. Detaylar çok yakında...", 
-            "date":"01 Jun 2022",
+            "date":"06 Jun 2022",
             "placeId":2 ,
             "categoryId":1,
             "numberOfParticipant": 100
@@ -27,7 +27,7 @@
             "id":3, 
             "title":"DJ Denden ile 90'lar Türkçe Pop Gecesi", 
             "description":"Sokaklarda kumdan baraj yapanlar, tetriste en uzun çubuğu sona bırakanlar, soba üstünde kestane yiyenler ve top kek sevenler.. Çocukluk anılarınız, ilk aşkınız, büyüdüğünüz yer, hayalleriniz, oyuncaklarınız, kasetler... Hepsi hala içinizde bir yerde, hepsi 90'larda...",
-            "date":"01 Jul 2022", 
+            "date":"02 Jul 2022", 
             "placeId":2, 
             "categoryId":1,
             "numberOfParticipant": 45
@@ -36,7 +36,7 @@
             "id":4, 
             "title":"Electronica Festival Çeşme 2022!", 
             "description":"10, 11 ve 12 Temmuz… Tatil, müzik, güneş, kum ve deniz… Bu yaz yine Sommer Klein, Çeşme’de elektronik müziğin en sevilen temsilcileri bir arada.Aksak, Alican, BeeGee, Blotto, DubFire, Fur Coat, Invoker, KAS:ST, Mind Against, Murat Uncuoğlu, Organica, Re.You, Sasha Carassi, Sezer Uysal ve Solee gibi sanatçılarla unutulmaz anlara imza atmak; müzik sevginizi yeni doruklara taşımak istiyorsanız siz de bu etkinliğin bir parçası olun!",
-            "date":"01 Jul 2022", 
+            "date":"06 Jul 2022", 
             "placeId":3,
             "categoryId":1,
             "numberOfParticipant": 124
@@ -45,7 +45,7 @@
             "id":5, 
             "title":"Mahşer-i Cümbüş", 
             "description":"2001 yılı Mayıs ayında Ankara Üniversitesi Dil ve Tarih-Coğrafya Fakültesi Tiyatro Bölümü öğrencileri tarafından kurulan Mahşer-i Cümbüş, aynı yıl Eylül ayında Ankara Tenedos Kafe’de “Tiyatro Sporu” gösterilerine başladı. Mahşer-i Cümbüş 2003 yılının ağustos ayında İstanbul’a taşınarak faaliyetlerini İstanbul’da sürdürdü. Mahşer-i Cümbüş kurulduğu günden bu yana Ankara ve İstanbul başta olmak üzere birçok ilde gösteriler sergiledi ve festivallere katıldı. Türkiye’de Modern Doğaçlama Tiyatro'nun öncüsü olan Mahşer-i Cümbüş, Doğaçlama Tiyatronun gösteri biçimlerinden biri olan “Tiyatro Sporu”nu Türkiye’de ilk defa seyirci ile buluşturdu. Kuruluşunun 5. yılında kendi sahnesi 'Mahşer-i Cümbüş Hayalhanesi'ni açtı. Ekip bugüne kadar 2000'ün üzerinde “Tiyatro Sporu”, 300’ün üzerinde “Beyin Fırtınası” gösterisi yaptı. Türkiye’de Modern Doğaçlama Tiyatro'nun öncüsü olan Mahşer-i Cümbüş, bir başka ilke daha imza atarak 2007 yılında Türkiye’nin ilk doğaçlama şov programı “Anında Görüntü Show”u ekranlara taşıdı ve Türk televizyonlarında yepyeni bir dönem başladı.", 
-            "date":"01 Jul 2022",
+            "date":"15 Jul 2022",
             "placeId":4,
             "categoryId":3,
             "numberOfParticipant": 105
@@ -54,7 +54,7 @@
             "id":6, 
             "title":"Yaşamaya Dair", 
             "description":"Nazım Hikmet'in ölümünün 54. yıldönümü için Genco Erkal'ın uyarlayıp yönettiği oyunda, Tülay Günal da oynuyor. Piyano ve viyolonsel eşliğinde oynanacak oyunda, başta Fazıl Say ve Zülfü Livaneli olmak üzere değişik bestecilerin Nazım şarkıları da seslendirilecek. Ağırlıklı olarak ozanın Bursa Cezaevi'ndeki yaşamını, eşi Piraye Hanım'a olan tutkusunu anlatan oyun, daha sonra sürgün yılları ve vatan hasretine odaklanarak, destansı yaşamından izlenimlerle noktalanıyor.", 
-            "date":"01 Jul 2022",
+            "date":"17 Jul 2022",
             "placeId":5,
             "categoryId":3,
             "numberOfParticipant": 44
@@ -63,7 +63,7 @@
             "id":7, 
             "title":"Sunay Akın ile Yüz Yüze", 
             "description":"Sunay Akın İle Yüz Yüze, 10 Temmuz'da Artur Tatil Köyü Açıkhava Sineması sahnesinde sizlerle..", 
-            "date":"01 Jul 2022",
+            "date":"06 Aug 2022",
             "placeId":5,
             "categoryId":3,
             "numberOfParticipant": 96
@@ -72,7 +72,7 @@
             "id":8, 
             "title":"Fethiye-Ölüdeniz Yamaç Paraşütü", 
             "description":"Aktivitemizde ; sizleri  konakladığınız otelden transfer araçlarımız ile alıyor ve Ölüdeniz'deki “HanumanTravel” ofisimize geliyoruz. Uçuş için  sizlerle ve pilotlarımız ile birlikte Babadağ’a çıkmak üzere , araçlarımız ile yola koyuluyoruz. Ofisimizin önünden uçuş pistine varmamız yaklaşık 25-30 dakika kadar sürüyor. Bir çok kültürde kutsal sayılan Sedir, Sandal, Ardıç ve Defne ağaçlarının çam ormanlarına karıştığı yollardan ilerlediğimiz bu kısa ama doyumsuz yolculuk sonrası kalkış alanına ulaşıyoruz.Dağa çıktığımızda 1700/1800 ve 1950 mt kalkış pistlerine çıkıyor ve güvenli bir uçuş için rüzgar hangi metre de uygun ise keyifli bir uçuş yaşamanız için o pisti kullanıyoruz.  Kalkmadan önce kısa birEkipman giyimi ve ekipman kontrolü ardından sizlere kısa bir info veriyoruz. Kendinizi  hazır hissettiğinizde, ise; içimizde tatlı bir heyecan, uygun bir rüzgarı da aldıysak önümüze; gökyüzüne havalanıyoruz 30dk kadar gökyüzünde süzülüyor kah eğleniyor,kah fotoğraf ve video çekerek eşsiz koyları kuşbakışı seyrediyor ve sizlerde isterseniz eğer inişe geçmeden küçük bir adrenalin yaşatacak akrobasi hareketler yapıyoruz.  Daha sonrasında iniş alanı olan Belcekız Plajı’na iniyor ve isteyen misafirlerimize çekimleri gösteriyoruz.", 
-            "date":"01 Jul 2022",
+            "date":"14 Aug 2022",
             "placeId":8,
             "categoryId":2,
             "numberOfParticipant": 133
@@ -81,7 +81,7 @@
             "id":9, 
             "title":"Boğaz'da Yoga", 
             "description":"Sait Halim Paşa Yalısı’nda muhteşem Boğaz manzarası eşliğinde yoga dersleri ile hem ruhunuzu hem de bedeninizi dinlendirmeye ne dersiniz?Boğaz’ın en güzel yapılarından Sait Halim Paşa Yalısı’nda, Boğazın mavisiyle iç içe yoga dersleri her seviyeden yoga severi bekliyor. YogaŞala’nın deneyimli hocası Duygu Erokan eğitmenlik yapacağı Vinyasa Yoga dersleri her çarşamba sabahı 10.00-11.00 saatleri arasında Harem Bahçe Salonu’nda gerçekleşecek.Yoga matlarının katılımcılar tarafından getirilmesini rica ederiz. Sait Halim Paşa Yalısı’nda Kültür ve Turizm Bakanlığı tarafından COVID-19 hakkında yayınlanan genelge koşullarına uyumlu bir şekilde sosyal mesafe, güvenlik ve yüksek hijyen standartları ile yeni temizlik önlemleri alınmıştır.", 
-            "date":"01 Jul 2022",
+            "date":"23 Jul 2022",
             "placeId":7,
             "categoryId":2,
             "numberOfParticipant": 21

@@ -1,39 +1,81 @@
 import React, { useState } from 'react';
-import Paper from '@mui/material/Paper';
-import InputBase from '@mui/material/InputBase';
-import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
-import { Box } from '@mui/material';
+import { Box, Button, TextField } from '@mui/material';
 
-export default function SearchBar() {
+export default function SearchBar({events,setEvents}) {
 
   const [searchValue, setSearchValue] = useState('');
+  const [startDate, setStartDate] = useState('');
+  const [finishDate, setFinishDate] = useState('');
+
+  const getEvents = (searchQuery,start, finish) => {
+    let url = `http://localhost:3002/events?q=${searchQuery}&_expand=place&_expand=category&_embed=images`
+    fetch(url)
+    .then(res=>res.json())
+    .then(data=>{
+      let filteredEvents = data;
+      if(startDate){
+        filteredEvents = filteredEvents.filter(x=>Date.parse(x.date) > Date.parse(start));
+      }
+      if(finishDate) {
+        filteredEvents = filteredEvents.filter(x=>Date.parse(x.date) < Date.parse(finish));
+      }
+      setEvents(filteredEvents);
+    })
+  }
 
   const onInputChange = e => {
     setSearchValue(e.target.value);
   }
 
   const handleClick = e => {
-    console.log(searchValue);
+    getEvents(searchValue,startDate,finishDate);
   }
 
   return (
-    <Box sx={{width:'100%', display:'flex', justifyContent:'center', mt:4}}>
-      <Paper
-        sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 300, backgroundColor: '#2980b9' }}
-      >
-        <InputBase
-          sx={{ ml: 1, flex: 1, color:'white'}}
-          placeholder="Etkinlik Ara"
-          inputProps={{ 'aria-label': 'input' }}
-          onChange={onInputChange}
-        />
-        <Divider sx={{ height: 28, m: 0.5, backgroundColor: 'white' }} orientation="vertical" />
-        <IconButton sx={{ p: '10px', color: 'white' }} aria-label="search" onClick={handleClick}>
-          <SearchIcon />
-        </IconButton>
-      </Paper>
+    <Box sx={{width:'100%', display:'flex', justifyContent:'center', my:4}}>
+      <Box sx={{display:'flex'}}>
+        <Box
+          sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 480 }}
+        >
+          <TextField
+            sx={{ ml: 1, flex: 1}}
+            placeholder="Etkinlik Ara"
+            value={searchValue}
+            variant="outlined"
+            onChange={onInputChange}
+          />
+
+        </Box>
+        <Box sx={{p: '2px 4px'}}>
+          <TextField
+            id="startDate"
+            type="date"
+            value={startDate}
+            label="Başlangıç Tarihi"
+            onChange={(e) => setStartDate(e.target.value)}
+            sx={{ width: 240 }}
+            InputLabelProps={{
+              shrink: true,
+            }}
+          />
+          <TextField 
+            id="finishDate"
+            type="date"
+            value={finishDate}
+            label="Bitiş Tarihi"
+            onChange={(e) => setFinishDate(e.target.value)}
+            sx={{ width: 240, mx:1 }}
+            InputLabelProps={{
+              shrink: true,
+            }}
+          />
+          <Button sx={{height:'100%'}} color='info' variant="contained" onClick={handleClick} startIcon={<SearchIcon />}>
+            Ara
+          </Button>
+        </Box>
+      </Box>
+      
     </Box>
   )
 }
