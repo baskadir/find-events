@@ -3,9 +3,13 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Box } from '@mui/material';
+import { Box, Link } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
-export default function Events({events}) {
+export default function EventList({events}) {
+
+  const navigate = useNavigate();
+
   return (
     <Box
       sx={{ display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}
@@ -41,7 +45,10 @@ export default function Events({events}) {
               }}
             >
               <Typography gutterBottom variant="h6" component="div">
-                {item.title}
+                <Link onClick={() => navigate(`/events/${item.id}`)} underline="hover" 
+                      sx={{color:'#4b7bec', cursor:'pointer'}}>
+                  {item.title}
+                </Link>
               </Typography>
             </CardContent>
           </Box>

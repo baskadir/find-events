@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Grid from '@mui/material/Grid';
-import Events from './events';
+import EventList from './event-list';
 import Filters from './filters';
 
 export default function EventsLayout() {
@@ -35,7 +35,7 @@ export default function EventsLayout() {
         <Filters events={events} filteredEvents={filteredEvents} expiredEvents={expiredEvents} setFilteredEvents={setFilteredEvents}></Filters>
       </Grid>
       <Grid item xs={8}>
-        <Events events={filteredEvents}></Events>
+        <EventList events={filteredEvents}></EventList>
       </Grid>
     </Grid>
   );
