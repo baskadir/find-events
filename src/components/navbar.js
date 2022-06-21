@@ -6,10 +6,7 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 import {useNavigate} from "react-router-dom";
-
-const navItems = [{'id':1,'title':'Anasayfa','url':'/'}, 
-{'id':2,'title':'Etkinlikler','url':'/events'}, 
-{'id':3,'title':'İletişim','url':'/contact'}];
+import navItems from "../assets/menuItems.json";
 
 export default function Navbar() {
 

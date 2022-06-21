@@ -27,11 +27,10 @@ export default function Slider() {
             <Swiper
                 cssMode={true}
                 navigation={true}
-                pagination={true}
                 mousewheel={true}
                 keyboard={true}
                 modules={[Navigation, Mousewheel, Keyboard]}
-                className="mySwiper"
+                className="home-slider"
             >
                 {events.map((item) => (
                     <SwiperSlide key={item.id}>

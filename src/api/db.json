@@ -12,7 +12,8 @@
             "date":"15 May 2022", 
             "placeId": 1,
             "categoryId":1,
-            "numberOfParticipant": 10
+            "numberOfParticipant": 10,
+            "price":100
         },
         {
             "id":2, 
@@ -21,7 +22,8 @@
             "date":"06 Jun 2022",
             "placeId":2 ,
             "categoryId":1,
-            "numberOfParticipant": 100
+            "numberOfParticipant": 100,
+            "price":200
         },
         {
             "id":3, 
@@ -30,7 +32,8 @@
             "date":"02 Jul 2022", 
             "placeId":2, 
             "categoryId":1,
-            "numberOfParticipant": 45
+            "numberOfParticipant": 45,
+            "price":150
         },
         {
             "id":4, 
@@ -39,7 +42,8 @@
             "date":"06 Jul 2022", 
             "placeId":3,
             "categoryId":1,
-            "numberOfParticipant": 124
+            "numberOfParticipant": 124,
+            "price":0
         },
         {
             "id":5, 
@@ -48,7 +52,8 @@
             "date":"15 Jul 2022",
             "placeId":4,
             "categoryId":3,
-            "numberOfParticipant": 105
+            "numberOfParticipant": 105,
+            "price":90
         },
         {
             "id":6, 
@@ -57,7 +62,8 @@
             "date":"17 Jul 2022",
             "placeId":5,
             "categoryId":3,
-            "numberOfParticipant": 44
+            "numberOfParticipant": 44,
+            "price":0
         },
         {
             "id":7, 
@@ -66,7 +72,8 @@
             "date":"06 Aug 2022",
             "placeId":5,
             "categoryId":3,
-            "numberOfParticipant": 96
+            "numberOfParticipant": 96,
+            "price":120
         },
         {
             "id":8, 
@@ -75,7 +82,8 @@
             "date":"14 Aug 2022",
             "placeId":8,
             "categoryId":2,
-            "numberOfParticipant": 133
+            "numberOfParticipant": 133,
+            "price":580
         },
         {
             "id":9, 
@@ -84,18 +92,59 @@
             "date":"23 Jul 2022",
             "placeId":7,
             "categoryId":2,
-            "numberOfParticipant": 21
+            "numberOfParticipant": 21,
+            "price":720
         }
     ],
     "places" : [
-        {"id":1, "name":"Yenişehir Belediyesi Atatürk Kültür Merkezi", "city":"Mersin"},
-        {"id":2, "name":"If Performance Hall", "city":"İstanbul"},
-        {"id":3, "name":"Sommer Klein", "city":"İzmir"},
-        {"id":4, "name":"Trump Shane", "city":"İstanbul"},
-        {"id":5, "name":"Kadıköy Belediyesi Selami Çeşme Özgürlük Parkı Amfi Tiyatro", "city":"İstanbul"},
-        {"id":6, "name":"Artur Tatil Köyü Açıkhava Sineması", "city":"Balıkesir"},
-        {"id":7, "name":"Sait Halim Paşa Yalısı", "city":"İstanbul"},
-        {"id":8, "name":"Hanuman Paragliding Ölüdeniz", "city":"Muğla"}
+        {
+            "id":1, 
+            "name":"Yenişehir Belediyesi Atatürk Kültür Merkezi", 
+            "city":"Mersin",
+            "addressSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.590026875788!2d34.58522421557316!3d36.804378875163636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1527f485359a946d%3A0xdbf13b1166f12f0c!2sYeni%C5%9Fehir%20Belediyesi%20Atat%C3%BCrk%20K%C3%BClt%C3%BCr%20Merkezi!5e0!3m2!1sen!2str!4v1655812367263!5m2!1sen!2str"
+        },
+        {
+            "id":2, 
+            "name":"If Performance Hall", 
+            "city":"İstanbul",
+            "addressSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.1405395704314!2d29.00428021566287!3d41.04405562517094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a2375d5079%3A0xcc43bd1a97ce7b56!2sIF%20Performance%20Hall%20Be%C5%9Fikta%C5%9F!5e0!3m2!1sen!2str!4v1655812416998!5m2!1sen!2str"
+        },
+        {
+            "id":3,
+            "name":"Sommer Klein", 
+            "city":"İzmir",
+            "addressSrc":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3134.0178283385835!2d26.363109231514777!3d38.232693628466166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bb7fcdd0fe9a0f%3A0xa1fc0e632c1e0177!2sSommer%20Klein!5e0!3m2!1sen!2str!4v1655812693850!5m2!1sen!2str"
+        },
+        {
+            "id":4, 
+            "name":"Trump Sahne", 
+            "city":"İstanbul",
+            "addressSrc":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.9481494205984!2d28.990411915663387!3d41.07012602356511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6fbf4fb50f5%3A0x2c60541c9e93c923!2sTrump%20K%C3%BClt%C3%BCr%20Ve%20G%C3%B6steri%20Merkezi!5e0!3m2!1sen!2str!4v1655812667432!5m2!1sen!2str"
+        },
+        {
+            "id":5, 
+            "name":"Kadıköy Belediyesi Selami Çeşme Özgürlük Parkı Amfi Tiyatro", 
+            "city":"İstanbul",
+            "addressSrc":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.0783286725214!2d29.052437815661527!3d40.97976562912736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac73ea354dae7%3A0xef6a0b0dd89f7579!2zw5Z6Z8O8cmzDvGsgUGFya8SxIEFtZmkgVGl5YXRybw!5e0!3m2!1sen!2str!4v1655812637477!5m2!1sen!2str"
+        },
+        {
+            "id":6, 
+            "name":"Artur Tatil Köyü Açıkhava Sineması", 
+            "city":"Balıkesir",
+            "addressSrc":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3081.9230972384316!2d26.803700915627385!3d39.42586342322471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b0a272d9365a91%3A0x1a2b50dc8f7fa8d!2zQXJ0dXIgScWfxLFrIEHDp8Sxa2hhdmEgU2luZW1hc8Sx!5e0!3m2!1sen!2str!4v1655812606382!5m2!1sen!2str"
+        },
+        {
+            "id":7, 
+            "name":"Sait Halim Paşa Yalısı", 
+            "city":"İstanbul",
+            "addressSrc":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.6402186858063!2d29.065251332103372!3d41.12054795422421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacaf4cf71ec1b%3A0x30d7f6c8bfff4940!2sSait%20Halim%20Pasha%20Mansion!5e0!3m2!1sen!2str!4v1655812571440!5m2!1sen!2str"
+        },
+        {
+            "id":8, 
+            "name":"Hanuman Paragliding Ölüdeniz", 
+            "city":"Muğla",
+            "addressSrc":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.346662616556!2d29.121691415567867!3d36.54575348968019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c0472be9bdcb3b%3A0xf9745c73dd432854!2sHanuman%20Paragliding%20Turkey!5e0!3m2!1sen!2str!4v1655812538829!5m2!1sen!2str"
+        }
     ],
     "images" : [
         {"id":1, "name":"oludeniz-1.jpg", "eventId":8},
