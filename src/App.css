@@ -33,3 +33,21 @@
 .swiper-button-next, .swiper-button-prev {
   color:#7efff5 !important;
 }
+
+@media only screen and (max-width: 1150px) {
+  .search-area {
+    margin: 0;
+    flex-direction: column;
+  }
+  .search-area-date {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-area-date>div {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}

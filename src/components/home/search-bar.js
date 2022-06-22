@@ -34,7 +34,7 @@ export default function SearchBar({events,setEvents}) {
 
   return (
     <Box sx={{width:'100%', display:'flex', justifyContent:'center', my:4}}>
-      <Box sx={{display:'flex'}}>
+      <Box className='search-area' sx={{display:'flex'}}>
         <Box
           sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 480 }}
         >
@@ -47,7 +47,7 @@ export default function SearchBar({events,setEvents}) {
           />
 
         </Box>
-        <Box sx={{p: '2px 4px'}}>
+        <Box sx={{p: '2px 4px'}} className='search-area-date'>
           <TextField
             id="startDate"
             type="date"

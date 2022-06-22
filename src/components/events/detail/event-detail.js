@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Grid from '@mui/material/Grid';
-import DetailRight from './detail-right';
 import {useParams} from "react-router";
 import DetailLeft from './detail-left';
+import DetailRight from './detail-right';
 
 export default function EventDetail() {
 

@@ -5,11 +5,14 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import ShareButton from 'react-social-share-buttons';
+import { useNavigate } from 'react-router-dom';
 
 export default function DetailLeft({place, price}) {
 
+    const navigate = useNavigate();
+
     const handleClick = e => {
-        console.log(place.id);
+        navigate(`/places/${place.id}/events`)
     };
 
     let postUrl = document.location.href;

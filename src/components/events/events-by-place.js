@@ -1,20 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import {useNavigate} from 'react-router-dom';
+import {useParams, useNavigate} from "react-router";
 
-export default function SearchEventList({events}) {
 
+export default function EventsByPlace(){
+
+    const [events, setEvents] = useState([]);
+
+    const {id} = useParams();
     const navigate = useNavigate();
 
-    return(
-        <Grid item xs={12} md={6}>
+    useEffect(() => {
+        getEventsByPlaces(id);
+    }, [id]);
+
+    const getEventsByPlaces = (id) => {
+        fetch(`http://localhost:3002/places/${id}/events?_expand=place&_expand=category&_embed=images`)
+        .then(res => res.json())
+        .then(data => {
+            setEvents(data);
+        }) 
+    }
+
+    return (
+        <Grid item xs={12} md={6} sx={{mt:3}}>
             {events.map((item)=>(
-                <CardActionArea key={item.id} sx={{mb:2}} component="a" onClick={()=>navigate(`/events/${item.id}`)}>
+                <CardActionArea key={item.id} sx={{mb:2}} component="a" onClick={() => navigate(`/events/${item.id}`)}>
                     <Card sx={{ display: 'flex', backgroundColor:Date.parse(item.date)>Date.now() ? '':'#dfe6e9' }}>
                         <CardContent sx={{ flex: 1, mr:3}}>
                             <Typography component="h2" variant="h5">
